@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aespacore by Miera Azmi</title>
+    <link
+      rel="icon"
+      type="image/jpg"
+      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/260/original/aespa_logo.jpg?1698543093"
+    />
+    <style>
+      body {
+        background: linear-gradient(
+          68.6deg,
+          rgb(252, 165, 241) 1.8%,
+          rgb(181, 255, 255) 100.5%
+        );
+      }
+
+      .page {
+        margin: 0 auto;
+        max-width: 800px;
+        background: linear-gradient(
+          106.5deg,
+          rgba(255, 215, 185, 0.91) 23%,
+          rgba(223, 159, 247, 0.8) 93%
+        );
+        border-style: groove;
+        border-color: #e84a5f;
+        border-radius: 50px;
+        box-shadow: 5px 5px 3px 0px rgba(226, 21, 141, 0.5);
+      }
+
+      h1 {
+        font-size: 45px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-weight: lighter;
+        text-align: center;
+        text-shadow: 0 3px 8px #8d1054;
+        color: #8d1054;
+        background-color: rgb(247, 241, 157);
+        box-shadow: 3px 3px 3px 0 rgba(101, 87, 4, 0.6);
+        border-radius: 10px;
+        padding: 1px 5px 10px 5px;
+        margin: 10px 50px 35px 50px;
+      }
+
+      h2 {
+        font-size: 40px;
+        font-family: fantasy;
+        text-align: center;
+        text-shadow: 5px 5px #1c0330;
+        color: #9d53c3;
+        border: 2px #040404;
+        margin-top: 0;
+      }
+
+      h3 {
+        font-size: 25px;
+        font-family: fantasy;
+        font-weight: 500;
+        text-align: center;
+        text-decoration: underline;
+        color: #142d4c;
+        margin-bottom: 0;
+      }
+
+      .logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 100px;
+        padding: 0 10px;
+      }
+
+      .img-1 {
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+        max-height: 70%;
+        border: 3px solid rgb(136, 28, 62);
+        border-radius: 20px;
+      }
+
+      .hlist {
+        font-size: 30px;
+        font-weight: lighter;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        text-align: center;
+        list-style: none;
+        color: #8d1054;
+        margin: auto;
+        padding: 0;
+      }
+
+      .hlist li {
+        display: inline;
+        margin: 0 50px;
+      }
+
+      .hlist a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .north {
+        color: rgb(8, 8, 159);
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .west {
+        color: rgb(171, 104, 10);
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .south {
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .east {
+        color: brown;
+        text-decoration: none;
+        font-weight: bolder;
+      }
+
+      .p1 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: #6c1697;
+        padding: 0 25px;
+      }
+
+      .box {
+        width: 20%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        border: 2px solid #430463;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px #040404;
+        padding: 10px 5px;
+        margin: 25px auto;
+        transition-duration: 0.4s;
+      }
+
+      .box:hover {
+        background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+          0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        text-decoration: underline;
+      }
+
+      .box a {
+        color: #66053a;
+        text-decoration: none;
+      }
+
+      button {
+        display: block;
+        margin: 25px auto;
+        padding: 15px 30px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 30px;
+        color: #8d1054;
+        background: rgb(249, 206, 255);
+        border-color: #8d1054;
+        border-bottom-color: #cb7bc6;
+        border-right-color: #9d53c3;
+        border-radius: 35px;
+        box-shadow: 2px 3px 4px 2px rgba(95, 1, 59, 0.2);
+        transition: all 100ms ease-in-out;
+      }
+
+      button:hover {
+        background: #eabfff;
+        box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2),
+          0 15px 25px 0 rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+      }
+
+      .sns {
+        font-size: 16px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 30px;
+      }
+
+      .sns a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .sns a:hover {
+        text-decoration: underline;
+      }
+
+      .sns span {
+        color: #8d1054;
+      }
+
+      .footer {
+        font-size: 14px;
+        font-family: monospace;
+        text-align: center;
+        opacity: 0.7;
+        margin-bottom: 18px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/261/original/aespa_logo_png.png?1698543348"
+        class="logo"
+      />
+
+      <h1>aespa</h1>
+
+      <h2>aespacore</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/102/263/original/aespa_group_pic_HD.jpeg?1698555009"
+        title="aespa x ae-aespa"
+        alt="This is the picture of aespa with their virtual counterpart, ae-aespa"
+        style="cursor: zoom-in"
+        class="img-1"
+      />
+
+      <h3><em>avatar x experience + aspect</em></h3>
+
+      <br />
+      <br />
+
+      <ul class="hlist">
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=qwieCy-T4zw&list=PLinm7-cvTdN6QkPK7CuXgJDaz3xPO28ro"
+            target="_blank"
+            style="color: #8d1054"
+            >MUSIC</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Aespa"
+            target="_blank"
+            style="color: #8d1054"
+            >AWARDS</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.youtube.com/watch?v=iq-ivLY_9A8&list=PLinm7-cvTdN5fb7kU3SUNUHlTXWZG-ZGo"
+            target="_blank"
+            style="color: #8d1054"
+            >SMCU</a
+          >
+        </li>
+      </ul>
+
+      <hr />
+
+      <br />
+      <div style="text-align: center">
+        <div style="font-size: 30px">
+          <b style="color: #8d1054">Introduction</b>
+        </div>
+
+        <p class="p1">
+          <strong>aespa (에스파)</strong> is a South Korean girl group formed by
+          SM Entertainment. The group consists of four members;
+          <br />
+          <a
+            href="https://aespa.fandom.com/wiki/Karina"
+            target="_blank"
+            class="north"
+            >KARINA</a
+          >
+          <br />
+          <a
+            href="https://aespa.fandom.com/wiki/Giselle"
+            target="blank"
+            class="south"
+            >GISELLE</a
+          >
+          <br />
+          <a
+            href="https://aespa.fandom.com/wiki/Winter"
+            target="blank"
+            class="west"
+            >WINTER</a
+          >
+          <br />
+          <a
+            href="https://aespa.fandom.com/wiki/Ningning"
+            target="blank"
+            class="east"
+            >NINGNING</a
+          >
+          <br />
+          Their <u>virtual counterpart</u> is known as
+          <big style="color: #86044b"><b>"ae"</b></big
+          >.
+          <br />
+          Having popularized the
+          <mark style="background-color: #73ffb9"
+            >metaverse concept and hyperpop music</mark
+          >
+          in K-pop, aespa is one of the
+          <span style="color: #66053a"
+            >most successful South Korean girl group</span
+          >
+          domestically and internationally.
+          <br />
+          aespa stands for
+          <span style="color: #08484d"
+            ><em>"avatar x experience and aspect."</em></span
+          >
+          It is related to the group's concept where each member has their own
+          avatar in a <u>virtual world.</u>
+        </p>
+
+        <p class="box">
+          <a
+            href="https://www.youtube.com/watch?v=Os_heh8vPfs"
+            target="_blank"
+            title="aespa's latest music video"
+            >aespa 에스파 'Spicy' MV
+          </a>
+        </p>
+      </div>
+
+      <hr />
+
+      <button>Album Purchase</button>
+
+      <div class="sns">
+        <span>Instagram:</span>
+        <a href="https://www.instagram.com/aespa_official/" target="_blank"
+          >@aespa_official</a
+        >
+        <span>Youtube:</span>
+        <a href="https://www.youtube.com/@aespa" target="_blank">aespa</a>
+
+        <p class="footer">Built by Miera Azmi</p>
+      </div>
+
+      <script>
+        function albumPurchase() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email address?");
+
+          if (name.length > 0 && email.length > 0) {
+            alert(
+              `Wise choice, ${name}! We'll send the details of your purchase to your email. Until then, have ae Next Level day 😆`
+            );
+          } else {
+            alert(
+              `Hey! Looks like the detail you give is incomplete. Please try again 🙏`
+            );
+          }
+        }
+
+        let purchaseButton = document.querySelector("button");
+
+        purchaseButton.addEventListener("click", albumPurchase);
+      </script>
+    </div>
+  </body>
+</html>
